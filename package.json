@@ -2,12 +2,10 @@
   "name": "sls-node-3",
   "version": "1.0.0",
   "description": "",
-  "main": "bin/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "bin": {
-    "botcli": "./bin/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "(for /F \"tokens=*\" %i in (.env) do set %i) && node index.js"
   },
   "author": "Viktoriia Koniukhova",
   "license": "ISC",
