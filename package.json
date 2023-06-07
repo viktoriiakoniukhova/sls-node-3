@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "(for /F \"tokens=*\" %i in (.env) do set %i) && node index.js"
+    "start": "node index.js",
+    "start-linux": "export $(cat .env | xargs) && npm start",
+    "start-windows": "(for /F \"tokens=*\" %i in (.env) do set %i) && npm start"
   },
   "author": "Viktoriia Koniukhova",
   "license": "ISC",

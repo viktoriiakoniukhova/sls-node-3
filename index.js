@@ -10,7 +10,7 @@ const token = process.env.BOT_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 
 bot.on("polling_error", (error) => {
-  console.log("Polling error:", error);
+  console.log("Помилка: ", error.message);
 });
 
 //Commander setup
