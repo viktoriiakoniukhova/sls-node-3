@@ -3,7 +3,7 @@ CLI: TELEGRAM CONSOLE SENDER
 
 **NOTE: To be able to use commands _message|m_ and _photo|p_ you should run _start|s_ command at first.**
 
-Prerequisites: Node.js, npm, commander.js installed.
+Prerequisites: Node.js, npm installed.
 
 To run script:
 
